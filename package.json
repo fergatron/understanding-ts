@@ -1,0 +1,23 @@
+{
+  "name": "understanding-ts",
+  "version": "0.0.1",
+  "description": "This repository is me following along with the lesson from Udemy by Maximilian Schwarzmuller.",
+  "main": "using-ts.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fergatron/understanding-ts.git"
+  },
+  "author": "Marc Ferguson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fergatron/understanding-ts/issues"
+  },
+  "homepage": "https://github.com/fergatron/understanding-ts#readme",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
