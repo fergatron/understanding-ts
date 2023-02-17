@@ -10,15 +10,22 @@ const person: {
     role: [2, 'author']
 }
 
-person.role.push(444);
-// person.role[1] = 10;
-person.role = [178, 'what'];
+enum Role { ADMIN, READ_ONLY = 9, AUTHOR };
 
-console.log(person);
+const user = {
+    name: 'Jared',
+    age: 30,
+    hobbies: ['Gaming', 'Knitting'],
+    role: Role.ADMIN
+}
 
 let favoriteActivites: string[];
 favoriteActivites = ['Sport'];
 
 for (const hobby of favoriteActivites) {
     console.log(hobby.toLowerCase());
+}
+
+if (user.role === Role.ADMIN) {
+    console.log('is an admin');
 }
