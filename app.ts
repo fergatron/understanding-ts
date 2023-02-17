@@ -1,31 +1,9 @@
-const person: {
-    name: string;
-    age: number;
-    hobbies: string[];        // array
-    role: [number, string]    // tuple
-} = {
-    name: 'Marc',
-    age: 43,
-    hobbies: ['Sports', 'Cooking'],
-    role: [2, 'author']
+function combine(input1: number | string, input2: number | string) {
+    if (typeof input1 === 'number' && typeof input2 === 'number') {
+        return input1 + input2;
+    }
+    return input1.toString() + input2.toString();
 }
 
-enum Role { ADMIN, READ_ONLY = 9, AUTHOR };
-
-const user = {
-    name: 'Jared',
-    age: 30,
-    hobbies: ['Gaming', 'Knitting'],
-    role: Role.ADMIN
-}
-
-let favoriteActivites: string[];
-favoriteActivites = ['Sport'];
-
-for (const hobby of favoriteActivites) {
-    console.log(hobby.toLowerCase());
-}
-
-if (user.role === Role.ADMIN) {
-    console.log('is an admin');
-}
+console.log('numbers', combine(30, 26));
+console.log('strings', combine('Max', 'Anna'));
